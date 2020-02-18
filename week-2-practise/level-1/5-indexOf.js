@@ -2,8 +2,8 @@
 // TIP: use the .indexOf() method (search the web for documentation if you're not sure)
 
 var itemToFind = 7;
-var arr = [3, 5, 61, 7, 123];
-var index; // ONLY EDIT THIS LINE
+var arr = [ 3, 5, 61, 7, 123 ];
+var index = arr.indexOf(itemToFind); // ONLY EDIT THIS LINE
 
 console.log(index);
 
