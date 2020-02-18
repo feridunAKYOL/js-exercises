@@ -2,9 +2,12 @@
 // It should contain the values of `nums` and `nums2` in ascending order
 // Tip: you might need to read the documentation for .sort (search "mdn array sort")
 
-var nums = [10, 1, 5, 29, 100];
-var nums2 = [11, 6, 3, 29, 12];
-var sortedNums; // complete this statement
+var nums = [ 10, 1, 5, 29, 100 ];
+var nums2 = [ 11, 6, 3, 29, 12 ];
+var sortedNums = nums.concat(nums2).sort(function(a, b) {
+	return a - b;
+});
+// nums.concat(nums2).map((x) => Number.parseInt(x)).sort(); // complete this statement
 
 console.log(sortedNums);
 
