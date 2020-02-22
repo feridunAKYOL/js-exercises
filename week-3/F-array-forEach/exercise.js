@@ -6,9 +6,37 @@
 
   An array with numbers 1-15 has been provided.
 */
+function change(item) {
+	if (item % 3 === 0 && item % 5 == 0) {
+		return (item = 'FizzBuzz');
+	}
+	if (item % 5 === 0) {
+		return (item = 'Buzz');
+	}
+	if (item % 3 === 0) {
+		return (item = 'Fizz');
+	} else {
+		return item;
+	}
+}
 
-var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
-
+var arr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 ];
+console.log(
+	arr.forEach(function change(item) {
+		if (item % 3 === 0 && item % 5 == 0) {
+			console.log('FizzBuzz');
+		}
+		if (item % 5 === 0) {
+			console.log('Buzz');
+		}
+		if (item % 3 === 0) {
+			console.log('Fizz');
+		}
+		if (item % 3 != 0 && item % 5 != 5) {
+			console.log(item);
+		}
+	})
+);
 /* EXPECTED OUTPUT */
 
 /*
