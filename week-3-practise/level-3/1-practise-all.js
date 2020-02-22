@@ -42,7 +42,11 @@ Expected Result:
 PasswordValidationResult=  [false, false, false, false, true]
 
 */
+function paso(password) {
+	return password.length >= 5 && password.match('^[a-zA-Z0-9]*$');
+}
 
-var password = ["Se%5", "TktE.TJTU", "384HsHF", "dvyyeyY!5", "tryT3729."];
+var password = [ 'Se%5', 'TktE.TJTU', '384HsHF', 'dvyyeyY!5', 'tryT3729.' ];
 
-console.log(PasswordValidationResult)
+const PasswordValidationResult = password.map(paso);
+console.log(PasswordValidationResult);

@@ -11,21 +11,23 @@ Continuing on from exercise level-1/2-every.js
 */
 
 var voyagers = [
-  "Adam family",
-  "Potter family",
-  "Eric",
-  "Aldous",
-  "Button family",
-  "Jude",
-  "Carmichael",
-  "Bunny",
-  "Asimov",
-  "Oscar family",
-  "Avery family",
-  "Archer family"
+	'Adam family',
+	'Potter family',
+	'Eric',
+	'Aldous',
+	'Button family',
+	'Jude',
+	'Carmichael',
+	'Bunny',
+	'Asimov',
+	'Oscar family',
+	'Avery family',
+	'Archer family'
 ];
 
-var colonisers; // Complete this statement
+var colonisers = voyagers.filter(function select(family) {
+	return family.includes('family') && family[0] === 'A';
+}); // Complete this statement
 
 console.log(colonisers);
 
