@@ -6,15 +6,18 @@ of the students who have attended AT LEAST 8 classes.
 */
 
 var attendances = [
-  ["Ahmed", 8],
-  ["Clement", 10],
-  ["Elamin", 6],
-  ["Adam", 7],
-  ["Tayoa", 11],
-  ["Nina", 10]
+	[ 'Ahmed', 8 ],
+	[ 'Clement', 10 ],
+	[ 'Elamin', 6 ],
+	[ 'Adam', 7 ],
+	[ 'Tayoa', 11 ],
+	[ 'Nina', 10 ]
 ];
 
-var eligibleStudentNames; // TODO: Complete this line.
+var eligibleStudentNames = attendances.filter(function student(nam) {
+	return nam[1] >= 8;
+});
+eligibleStudentNames = eligibleStudentNames.map((x) => x[0]); // TODO: Complete this line.
 
 console.log(eligibleStudentNames);
 
